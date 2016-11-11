@@ -6,31 +6,31 @@ block content
     h1.title Account
     hr
     table
-      tr(class="alternating")
+      tr.alternating
         td
           strong Username
         td= username
-      tr(class="alternating")
+      tr.alternating
         td
           strong Real Name
         td= realName
-      tr(class="alternating")
+      tr.alternating
         td
           strong Admin?
         td= isAdmin
-      tr(class="alternating")
+      tr.alternating
         td
           strong Last Seen
         td= lastSeen
       tr(class="alternating #{shouldBroadcast ? 'positive':'negative'}")
         td
           strong (Privacy) Should Broadcast
-        form(class='inline' action='account/setprivacy', method='post')
+        form.inline(action='account/setprivacy', method='post')
           td.toggle-button          
             input(type='hidden', name='shouldBroadcast', value='#{shouldBroadcast}')
-            input(class="toggle" type='submit', value=('Turn ' + (shouldBroadcast ? 'Off' : 'On')))
+            input.toggle(type='submit', value=('Turn ' + (shouldBroadcast ? 'Off' : 'On')))
       each addr in addresses
-        tr(class="alternating")
+        tr.alternating
           td
             strong address
           td.mac #{addr}
@@ -45,9 +45,9 @@ block content
       div.form-group.input-group
         span.input-group-addon
           i.glyphicon.glyphicon-signal
-        input.form-control(type='text', name='address',placeholder='Add Mac Address (01:23:45:67:89:ab)')
+        input.form-control(type='text', name='address', placeholder='Add Mac Address (01:23:45:67:89:ab)')
       
       div.form-group
         input.btn.btn-def.btn-block.register(type='submit', value='Add')
 
-      a.back(href="/") &lt;&lt;Back
+      a.back(href="/") &lt; Back

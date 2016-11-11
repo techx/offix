@@ -5,18 +5,17 @@ block content
     h1.offix Offi<span>X</span>
     h1.title Log In
     h4.error #{errMes}
-    form(name='login', action='/login', method='post', autocomplete="off")
-    
+    form(name='login', action='/login', method='post', autocomplete="off")    
 
       div.form-group.input-group
         span.input-group-addon
           i.glyphicon.glyphicon-user
-        input.form-control(type='text', name='username',placeholder='Username')
+        input.form-control(type='text', name='username', placeholder='Username')
 
       div.form-group.input-group
         span.input-group-addon
           i.glyphicon.glyphicon-lock
-        input.form-control(type='password', name='password',placeholder='Password')
+        input.form-control(type='password', name='password', placeholder='Password')
 
       div.form-group
         input.btn.btn-def.btn-block.login(type='submit', value='Login')

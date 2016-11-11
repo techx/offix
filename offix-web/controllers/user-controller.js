@@ -35,25 +35,27 @@ UserController.register = function(req, res) {
     // TODO nicer error message / page
     return res
       .status(401)
-      .render('create',{errMes:'Invalid signup key'});
+      .render('create', {errMes: 'Invalid signup key'});
   }
   if (!req.body.username || req.body.username.length < config.MIN_USERNAME_LENGTH) {
     // TODO nicer error message
     return res
       .status(400)
-      .render('create',{errMes:'Username too short, Min. length ' + config.MIN_USERNAME_LENGTH});
+      .render('create', {errMes: 'Username too short, min. length ' + config.MIN_USERNAME_LENGTH});
   }
   if (!req.body.password || req.body.password.length < config.MIN_PASSWORD_LENGTH) {
     // TODO nicer error message
     return res
       .status(400)
-      .render('create', {errMes: 'Password too short, Min. length ' + config.MIN_PASSWORD_LENGTH});
+      .render('create', {errMes: 'Password too short, min. length ' + config.MIN_PASSWORD_LENGTH});
   }
   User.register(req.body.username, req.body.password, req.body.realName, function(err, user) {
     if (err) {
       // TODO more helpful error messages like "user is already registered"
       // TODO don't leak debug info by just sending along err
-      return res.status(500).render('create', {errMes: 'Something went wrong, try again? ' + err });
+      return res
+        .status(500)
+        .render('create', {errMes: 'Something went wrong, try again? ' + err });
     }
     // start user session
     req.session.user = user;
@@ -68,7 +70,7 @@ UserController.login = function(req, res) {
       // TODO separate out errors from invalid login credentials
       // and send appropriate status code and a descriptive error message
       
-      return res.status(401).render('unauthed',{errMes:'Bad login'});
+      return res.status(401).render('unauthed', {errMes: 'Bad login'});
     }
     // start user session
     req.session.user = user;

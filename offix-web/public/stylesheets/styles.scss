@@ -1,15 +1,15 @@
 body {
-	font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
   line-height: 16px;
-	background-color: #000;
-	color: white;  
-	text-align: center;
+  background-color: #000;
+  color: white;
+  text-align: center;
 }
 
 .center {
-	margin: auto;
-	max-width: 500px;
-	margin-top: 40px;
+  margin: auto;
+  max-width: 500px;
+  margin-top: 40px;
   margin-bottom: 100px;
 }
 
@@ -23,120 +23,120 @@ body {
 }
 
 .offix {
-		font-size: 7.750em;
-		font-family: 'Montserrat', 'Open Sans', arial;
-		color: #5083BF;
-    margin: 0px;
+  font-size: 7.750em;
+  font-family: 'Montserrat', 'Open Sans', arial;
+  color: #5083BF;
+  margin: 0px;
 
-		span {
-				color: #fff;
-				font-weight: 500;
-		}		
+  span {
+    color: #fff;
+    font-weight: 500;
+  }
 }
 
 .title {
-		margin: 40px;
-    font-size: 2.5em;
+  margin: 40px;
+  font-size: 2.5em;
 }
 
 .error {
   font-size: 1.5em;
   margin: 1em;
-  color:red;
+  color: red;
 }
 
 .form-group {
-		padding: 5px 0px;
+  padding: 5px 0px;
 }
 
 .input-group-addon {
-		padding: 6px 12px;
-		font-size: .875em;
-		color: #888;
-		background-color: transparent;
-		border: 0px;
+  padding: 6px 12px;
+  font-size: .875em;
+  color: #888;
+  background-color: transparent;
+  border: 0px;
 }
 
 .form-control {
-		border: 0px;
-		border-radius: 0;
-		font-size: 1em;
-    height: auto;
-		border-bottom: .063em solid #888;
-		background-color: transparent;
-		color: white;
+  border: 0px;
+  border-radius: 0;
+  font-size: 1em;
+  height: auto;
+  border-bottom: .063em solid #888;
+  background-color: transparent;
+  color: white;
 
-		&:focus {
-				box-shadow: none;
-				border-bottom: .063em solid white;
-		}
+  &:focus {
+    box-shadow: none;
+    border-bottom: .063em solid white;
+  }
 }
 
 .login,.register {
-  	display: inline-block;
-		vertical-align: text-bottom;
-		width: auto !important;
-		margin: 0px 10px;
-		padding: 11px 44px;
-		font-size: .688em;
-		line-height: 2em;
-		letter-spacing: .08em;
-		text-transform: uppercase;
-    transition: color .2s, background-color .2s, border .2s;
+  display: inline-block;
+  vertical-align: text-bottom;
+  width: auto !important;
+  margin: 0px 10px;
+  padding: 11px 44px;
+  font-size: .688em;
+  line-height: 2em;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  transition: color .2s, background-color .2s, border .2s;
 }
 
 .login {
-		color: black;		
-		background-color: #ddd;		
+  color: black;
+  background-color: #ddd;
 
-		&:hover {
-				background-color: #999;
-		}
+  &:hover {
+    background-color: #999;
+  }
 }
 
 .register {
-		color: white;
-		background-color: transparent;
-		border: .063em solid #555;
+  color: white;
+  background-color: transparent;
+  border: .063em solid #555;
 
-		&:hover {
-				color: #ccc;
-				border: .063em solid #ccc;
-		}
+  &:hover {
+    color: #ccc;
+    border: .063em solid #ccc;
+  }
 }
 
 a {
-	color: #00B7FF;
-	cursor: pointer;
+  color: #00B7FF;
+  cursor: pointer;
 }
 
 hr {
-		border-top: .063em #aaa solid;
+  border-top: .063em #aaa solid;
 }
 
 table {
-		margin: 0px auto;
-    height: 100%;
-		width: 100%;
-		color: #ccc;
+  margin: 0px auto;
+  height: 100%;
+  width: 100%;
+  color: #ccc;
 
-    #table-titles {
-		  text-transform: uppercase;
+  #table-titles {
+    text-transform: uppercase;
   }
 }
 
 th, td {
-		padding: 15px 0px;
-		border-left: .125em black solid;
-		border-right: .125em black solid;
+  padding: 15px 0px;
+  border-left: .125em black solid;
+  border-right: .125em black solid;
 }
 
 tr.alternating:nth-child(even) {
-		background-color: #2a2a2a;    
+  background-color: #2a2a2a;
 }
 
 .toggle-button {
-  padding:0;
+  padding: 0;
 
   input {
     width: 100%;
@@ -144,16 +144,16 @@ tr.alternating:nth-child(even) {
     transition: background-color .2s;
     background-color: transparent;
     border: 0px;
-  
+
     &:focus {
-      outline-color: transparent;			
-    }  			
-	}
+      outline-color: transparent;
+    }
+  }
 }
 
 .remove-button {
   margin-left: 10px;
-  height:100%;
+  height: 100%;
   font-size: 1.25em;
   vertical-align: middle;
   color: #bb3d30;
@@ -161,7 +161,7 @@ tr.alternating:nth-child(even) {
   cursor: pointer;
 
   &:hover {
-    color:red;
+    color: red;
   }
 
   form {
@@ -195,22 +195,22 @@ tr.negative input:hover {
 td.positive,
 tr.positive,
 tr.negative {
-	color: white;
+  color: white;
 }
 
 td.positive,
 tr.positive {
-	background-color: #259958;
+  background-color: #259958;
 }
 
 td.negative,
 tr.negative {
-	background-color: #bb3d30;
+  background-color: #bb3d30;
 }
 
 
-@media only screen 
-  and (min-device-width: 320px) 
+@media only screen
+  and (min-device-width: 320px)
   and (max-device-width: 1100px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
@@ -233,7 +233,7 @@ tr.negative {
 
   .form-control {
       font-size: 1.8em;
-  }    
+  }
 
   .register {
     margin: 40px;
@@ -271,8 +271,8 @@ tr.negative {
 }
 
 
-@media only screen 
-  and (min-device-width: 700px) 
+@media only screen
+  and (min-device-width: 700px)
   and (max-device-width: 1100px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
