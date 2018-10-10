@@ -4,7 +4,7 @@
 
 This documentation is decent, but it isn't super detailed, at least not yet. If
 you're trying to set this up and have any questions, feel free to [open an
-issue][issue] or send me an email (me@anishathalye.com). Check out the [blog post] (https://www.anishathalye.com/2016/06/03/whos-in-the-office/).
+issue][issue] or send me an email (me@anishathalye.com). Check out the [blog post](https://www.anishathalye.com/2016/06/03/whos-in-the-office/).
 
 ## Hardware Setup
 
